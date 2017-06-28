@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>模板引擎指令</title>
+</head>
+<body>
+-------------输出 指令-------------
+<br/>
+1--#(value)
+<br/>
+2--#(user.name??)
+<br/>
+3--#(a>b?"aaa":"bbb")
+<br/>
+3--#(name??"哈哈哈")
+<br/>
+-------------if指令-------------
+<br/>
+1--
+#if(a>=10)
+	a>=10
+#elseif(a>=5)
+	5<=a<10
+#else
+	a<5
+#end
+<br/>
+-------------for指令-------------
+<br/>
+#for(x:names)
+	#(x)<br/>
+#end
+
+<br/>
+#for(x:user)
+	#(x.key)--#(x.value)
+#end
+
+<br/>
+#for(x:user)
+	#if(x.key=='name')
+		名字为：#(x.value)
+	#elseif(x.key=='age')
+		年龄为：#(x.value)
+	#end
+	
+#end
+
+<br/>
+#for(x:[1..10])
+	#(for.count).#(x)-#(for.size)<br/>
+#end 
+
+-------------include指令和define指令/SharedFunction-------------
+
+<br/>
+#@templateFunction(123456)
+<br/>
+-------------SharedStaticMethod-------------
+<br/>
+#--
+静态属性访问:#(com.bdsht.study01.service.ShareObject::SHAREVAR)<br/>
+静态方法调用:#(com.bdsht.study01.service.ShareObject::shareMethod())
+--#
+
+静态方法调用:#(shareMethod())<br/>
+静态方法调用:1+2=#(add(1,2))<br/>
+#(sm.test())<br/>
+#(sm.test1)<br/>
+#(sm.test2)<br/>
+</body>
+</html>

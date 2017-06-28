@@ -1,0 +1,47 @@
+jdbcUrl = jdbc:mysql://localhost:3306/makeappo?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = root
+password = root
+devMode = true
+oauth_redirect_uri=tianlixin.cyansoft.cn
+
+# 微信服务器回调所用的 token
+token=cyansoft
+
+# 测试用的账号
+# 测试平台
+#appId=wx6080c31355b4073e
+#appSecret=5224a224c6912d26c0b6ade3247e8440
+
+#心e平台
+appId=wx107b4f536b4c47db
+appSecret=7fb9e28f46459b7336864575ca96fc7f
+
+#聪聪平台
+#appId=wx1dd831d081aae147
+#appSecret=8f921161aed79a86504731fe37f5c737
+
+#是否对消息进行加密，是否对消息进行加密，对应于微信平台的消息加解密方式，false支持明文模式及兼容模式，true支持安全模式及兼容模式
+#encryptMessage=true
+#encodingAesKey=cI7t1cjUDb9R307Et4NfWW1mtrEZBltXbHgF2kDjbUh
+
+#####业务逻辑中的华丽的分割线#########
+#授权域名
+domain=http://wx.xinewang.com
+#百度翻译 http://api.fanyi.baidu.com/api/trans/product/index
+#bt_appId=20160507000020444 
+#bt_appKey=reIsOh2IClF65vtgdXn8
+
+#聪聪学英语
+bt_appId=20160726000025775
+bt_appKey=veXFO99XCAk8VF3RWRBc
+
+
+#有道翻译 http://fanyi.youdao.com/openapi
+#http://fanyi.youdao.com/openapi.do?keyfrom=CongStudyEnglish&key=1494648756&type=data&doctype=json&version=1.1&q=apple
+keyfrom=CongStudyEnglish
+key=1494648756
+
+#百度http://apistore.baidu.com/
+apiKey=15ddfc1ab336ee0f095f14150d8e607d
+
+
